@@ -1,0 +1,129 @@
+/* Start Testimonials-section */
+#testimonials-section {
+    padding-block: 3rem 7rem;
+}
+
+#testimonials-section .testimonials-wrapper {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    #testimonials-section .testimonials-wrapper {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.testimonials-wrapper>h2 {
+    color: #2f2f2f;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.testimonials-wrapper>p {
+    margin-bottom: 4.5rem;
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+
+.testimonials-wrapper .testi-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials-wrapper .testi-content .testi-img {
+    margin-bottom: 20px;
+}
+
+.testimonials-wrapper .testi-content .testi-img img {
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+
+.testimonials-wrapper .testi-content .testi-name {
+    margin-bottom: 2.5rem;
+}
+
+.testimonials-wrapper .testi-content .testi-name h5 {
+    color: #2f2f2f;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.testimonials-wrapper .testi-content .testi-bullets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.testimonials-wrapper .testi-content .testi-bullets span i {
+    cursor: pointer;
+    font-size: 8px;
+    color: #d6d6d6;
+    transition: color 0.2s;
+}
+
+.testimonials-wrapper .testi-content .testi-bullets span.active i {
+    color: #3b5d50;
+}
+
+.testimonials-wrapper .testi-content .testi-bullets span:hover i {
+    color: #3b5d50;
+}
+
+#testimonials-section .container {
+    position: relative;
+}
+
+#testimonials-section .prev {
+    top: 50%;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    line-height: 58px;
+    border-radius: 50%;
+    background-color: rgba(59, 93, 80, 0.1);
+    color: #2f2f2f;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+#testimonials-section .next {
+    top: 50%;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    line-height: 58px;
+    border-radius: 50%;
+    background-color: rgba(59, 93, 80, 0.1);
+    color: #2f2f2f;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+#testimonials-section .prev:hover,
+#testimonials-section .next:hover {
+    color: #fff;
+    background-color: #3b5d50;
+}
+
+
+/* End Testimonials-section */

@@ -1,0 +1,67 @@
+/* Start Our-Team */
+#our-team-section {
+    padding: 7rem 0;
+}
+
+@media (max-width: 1244px) {
+    #our-team-section {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 599px) {
+    .our-team-wrapper .our-team-box {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #2f2f2f;
+        text-align: center;
+    }
+}
+
+.our-team-box .our-team-img img {
+    margin-bottom: 3rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.our-team-wrapper .our-team-box img:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 599px) {
+    .our-team-box .our-team-img img {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+}
+
+.our-team-box .our-team-img h3 {
+    color: #2f2f2f;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: underline;
+}
+
+.our-team-box .our-team-img span {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.our-team-wrapper .our-team-content p {
+    margin-bottom: 1rem;
+}
+
+.our-team-wrapper .our-team-content div a {
+    font-weight: 600;
+    color: #2f2f2f;
+    text-decoration: underline;
+    transition: opacity 0.2s;
+}
+
+.our-team-wrapper .our-team-content div a:hover {
+    opacity: 0.6;
+}
+
+
+/* End Our-Team */

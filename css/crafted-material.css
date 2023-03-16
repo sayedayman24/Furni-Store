@@ -1,0 +1,125 @@
+/* Start Crafted-Material */
+#crafted-material {
+    padding: 7rem 0;
+}
+
+.crafted-material-wrapper .crafted-material-box-1 h2 {
+    color: #2f2f2f;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.crafted-material-wrapper .crafted-material-box-1 p {
+    margin-bottom: 1.5rem;
+}
+
+.crafted-material-wrapper .crafted-material-box-1 div {
+    margin-bottom: 1rem;
+}
+
+.crafted-material-wrapper .crafted-material-box {
+    text-align: center;
+}
+
+.crafted-material-wrapper .crafted-material-box img {
+    margin-bottom: 1.8rem;
+    position: relative;
+}
+
+
+.crafted-material-wrapper .crafted-material-box h3 {
+    color: #2f2f2f;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.crafted-material-wrapper .crafted-material-box p {
+    color: #2f2f2f;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.crafted-material-wrapper .crafted-material-my-product {
+    display: block;
+    position: relative;
+    /* 
+        el padding-bottom
+        3shan el (plus) men
+        awel el before
+    */
+    padding-bottom: 35px;
+}
+
+.crafted-material-my-product span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2f2f2f;
+    padding: 9px 10px;
+    border-radius: 50%;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    bottom: -30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.3s, opacity 0.3s, bottom 0.3s;
+}
+
+.crafted-material-my-product span i {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.crafted-material-my-product:hover span {
+    opacity: 1;
+    visibility: visible;
+    bottom: -50px;
+}
+
+/* Hover Products */
+.crafted-material-my-product img {
+    transition: transform 0.5s;
+}
+
+.crafted-material-my-product:hover img {
+    transform: translateY(-25px);
+}
+
+.crafted-material-my-product h3 {
+    transition: opacity 0.2s;
+}
+
+.crafted-material-my-product:hover h3 {
+    opacity: 0.9;
+}
+
+.crafted-material-my-product::before {
+    content: '';
+    position: absolute;
+    background-color: #dce5e4;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0%;
+    z-index: -1;
+    transition: height 0.3s;
+}
+
+.crafted-material-my-product:hover::before {
+    height: 70%;
+}
+
+/* End Crafted-Material */
+
+@media (max-width: 599px) {
+    #crafted-material .crafted-material-box-1 {
+        text-align: center;
+    }
+}

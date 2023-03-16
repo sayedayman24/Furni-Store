@@ -1,0 +1,63 @@
+/* Start Easy-to-Shop */
+#easy-to-shop {
+    padding: 7rem 0;
+}
+
+@media (min-width: 1763px) {
+    #easy-to-shop .gridYasta-250 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+    }
+}
+
+.easy-to-shop-wrapper .easy-to-shop-box {
+    padding: 0 12px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 599px) {
+    .easy-to-shop-wrapper .easy-to-shop-box {
+        margin-bottom: 0;
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #cacaca;
+    }
+
+    .easy-to-shop-wrapper .easy-to-shop-box .my-icon {
+        width: fit-content;
+        margin: 0 auto 20px auto;
+    }
+}
+
+.easy-to-shop-wrapper .easy-to-shop-box .my-icon {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.easy-to-shop-wrapper .easy-to-shop-box .my-icon::before {
+    position: absolute;
+    content: '';
+    background-color: #3b5d5033;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: 10px;
+    bottom: 0;
+}
+
+.easy-to-shop-wrapper .easy-to-shop-box .my-icon i {
+    font-size: 27px;
+    color: #383838;
+}
+
+.easy-to-shop-wrapper .easy-to-shop-box h4 {
+    font-size: 14px;
+    color: #2f2f2f;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* End Easy-to-Shop */

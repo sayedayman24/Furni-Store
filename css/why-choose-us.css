@@ -1,0 +1,147 @@
+/* Start Why-Choose-Us */
+#why-choose-us {
+    padding: 7rem 0;
+}
+
+.why-choose-us-wrapper .why-choose-us-box-1 h2 {
+    color: #2f2f2f;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.why-choose-us-wrapper .why-choose-us-box-1 p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.why-choose-us-wrapper .why-choose-us-box-1-box {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+
+.why-choose-us-wrapper .why-choose-us-box-1-box-box {
+    padding: 0 12px;
+    margin-bottom: 30px;
+}
+
+
+.why-choose-us-wrapper .why-choose-us-box-1-box-box .my-icon {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.why-choose-us-wrapper .why-choose-us-box-1-box-box .my-icon::before {
+    position: absolute;
+    content: '';
+    background-color: #3b5d5033;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: 10px;
+    bottom: 0;
+}
+
+.why-choose-us-wrapper .why-choose-us-box-1-box-box .my-icon i {
+    font-size: 27px;
+    color: #383838;
+}
+
+.why-choose-us-wrapper .why-choose-us-box-1-box-box h4 {
+    font-size: 14px;
+    color: #2f2f2f;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.why-choose-us-wrapper .why-choose-us-box-1-box p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #6a6a6a;
+}
+
+.why-choose-us-box-2 .why-choose-us-img-wrraper {
+    text-align: right;
+    position: relative;
+}
+
+.why-choose-us-box-2 .why-choose-us-img-wrraper:before {
+    content: '';
+    position: absolute;
+    background-image: url(../img/dots-yellow.svg);
+    width: 255px;
+    height: 217px;
+    transform: translate(-37%, -37%);
+    z-index: -1;
+}
+
+.why-choose-us-box-2 .why-choose-us-img-wrraper img {
+    border-radius: 20px;
+    max-width: 85%;
+    height: auto;
+}
+
+/* End Why-Choose-Us */
+
+/* ------ Start Media Query ------ */
+@media (max-width: 599px) {
+    #why-choose-us {
+        padding: 3rem 0;
+    }
+
+    #why-choose-us .why-choose-us-box-1 {
+        text-align: center;
+    }
+
+    .why-choose-us-wrapper .why-choose-us-box-1-box-box .my-icon {
+        margin-bottom: 20px;
+        position: relative;
+        width: fit-content;
+        margin: 0 auto 20px auto;
+    }
+
+    .why-choose-us-wrapper .gridYasta-250 {
+        display: block;
+    }
+
+    .why-choose-us-box-2 .why-choose-us-img-wrraper {
+        width: 80%;
+        margin: auto;
+    }
+
+    #why-choose-us .gridYasta-500 {
+        display: block;
+    }
+
+    .why-choose-us-wrapper .why-choose-us-box-1-box {
+        margin-bottom: 7rem;
+    }
+}
+
+@media (max-width: 1245px) {
+    #why-choose-us {
+        padding: 0px 0px;
+    }
+
+    .why-choose-us-wrapper .gridYasta-250 {
+        gap: 0;
+    }
+}
+
+/* ------ End Media Query ------ */
+
+
+/* @media (min-width: 599px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {} */
