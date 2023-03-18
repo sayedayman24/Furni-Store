@@ -9,6 +9,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 #nav .myNav .myNav-start {
@@ -88,14 +89,14 @@
     width: calc(100% - 32px);
 }
 
-#nav .myNav .myNav-end .myNav-icons {
+#nav .myNav .myNav-icons {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
 }
 
-.myNav-end .myNav-icons .myNav-user a {
+.myNav-icons .myNav-user a {
     display: block;
     color: #fff;
     font-size: 18px;
@@ -104,12 +105,12 @@
     transition: opacity 0.2s;
 }
 
-.myNav-end .myNav-icons .myNav-user a:hover {
+.myNav-icons .myNav-user a:hover {
     opacity: 0.5;
     background-color: #3b5d50;
 }
 
-.myNav-end .myNav-icons .myNav-shopping a {
+.myNav-icons .myNav-shopping a {
     display: block;
     color: #fff;
     font-size: 18px;
@@ -118,7 +119,7 @@
     transition: opacity 0.2s;
 }
 
-.myNav-end .myNav-icons .myNav-shopping a:hover {
+.myNav-icons .myNav-shopping a:hover {
     opacity: 0.5;
     background-color: #3b5d50;
 }
@@ -553,39 +554,9 @@
     }
 }
 
-@media (max-width: 768px) {
-    #nav .myNav .myNav-end {
-        display: none;
-    }
-
-    #nav .myNav .button-nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #nav .myNav .button-nav span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #nav .myNav .button-nav span i {
-        color: #fff;
-        font-size: 25px;
-    }
-}
-
-@media (min-width: 769px) {
-    #nav .myNav .button-nav {
-        display: none;
-    }
-}
-
 /* End Nav */
 
 /* Start Header */
-
 @media (max-width: 992px) {
     #header {
         padding: 80px 0;
@@ -714,6 +685,87 @@
 /* End Footer */
 
 /* ------ End Media Query ------ */
+
+
+/* Start Toggle-Menu */
+#check {
+    display: none;
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+@media (max-width: 768px) {
+    #nav .myNav .myNav-icons {
+        gap: 5px;
+        margin-right: 50px;
+    }
+
+    #nav .myNav .myNav-end {
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        opacity: 0;
+        z-index: 100;
+        background-color: #2f2f2f;
+        transition: all 0.2s ease-in-out;
+    }
+
+    #nav .myNav .myNav-end .myNav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 1.2rem;
+        width: 70%;
+    }
+
+    #nav .myNav .myNav-end .myNav-links li {
+        text-align: center;
+    }
+
+    #nav .myNav .myNav-end .myNav-links .myNav-link-item a {
+        padding: 20px 30px;
+    }
+
+    .myNav-links .myNav-link-item:hover a::before {
+        width: 0;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+
+    #check:checked~.myNav-end {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+/* End Toggle-Menu */
+
+
 
 
 /* @media (min-width: 576px) {}
